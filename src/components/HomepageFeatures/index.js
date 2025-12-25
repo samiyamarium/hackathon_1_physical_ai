@@ -88,7 +88,16 @@ export default function HomepageFeatures() {
         <div className={styles.tocGrid}>
           {TableOfContents.map((item, idx) => (
             <TOCItem key={idx} {...item} />
-          ))}
+          ))} <br/> <br/> 
+           <a  style={{backgroundColor:'olivedrab',textDecoration:'none',border:4,borderBlockColor:'green',marginLeft: 20, fontSize:'4px' }}
+            href="https://chatbot-humanoid.streamlit.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            
+          >
+           <h1 style={{ marginLeft:'8rem' ,fontWidth:'extra-condensed', marginTop: '4rem', fontSize:'2rem', fontFamily:'cursive' , color:'darkgray'}}>🤖</h1>
+            <p style={{border:8 , fontWidth:'extra-condensed', bordercolor:'forestgreen',fontSize:16,marginLeft:'2rem', color:'darkgray'}}><b>Interactive Humanoid Robotics Chatbot</b> </p> <p style={{border:8,fontWidth:64 ,fontSize:16,marginLeft:'2rem', color:'darkgray'}}> <b>o→→→→Open in Full Screen →→→→o </b></p>
+          </a>
         </div>
       </div>
     </section>
